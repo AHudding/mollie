@@ -1,0 +1,80 @@
+<p id="notice"><%= notice %></p>
+
+<div class="Header">
+  <h1> Welkom <img src="http://res.cloudinary.com/angela2389/image/upload/v1477578644/Schermafbeelding_2016-10-27_om_16.30.21_u9heoy.png"> </h1>
+  <div class="Picture">
+    <div class="Welcome">
+    </div>
+  </div>
+</div>
+
+<div class="Main">
+  <div class="Hire">
+    <h1>  </h1>
+  </div>
+  <div class="Experience">
+    <div id="Jobs">
+      <h1>Wie ben ik?</h1>
+      <p>Ik ben Angela van den Hudding, 27 jaar en kom uit Hoorn.
+        Ik volg momenteel een traineeship via <a href="https://www.codaisseur.com/employers">Codaisseur</a>.
+        Ik heb inmiddels al twee maanden cursus met succes voltooid en ik zou graag bij jullie aan de slag gaan als junior webdeveloper.
+      <br><br>Ik heb kennis van:
+      <ul>
+        <li> HTML </li>
+        <li> CSS </li>
+        <li> Bootstrap </li>
+        <li> Ruby on Rails </li>
+        <li> Javascript (basis) </li>
+        <li> C# (basis) </li>
+        <li> React (basis) </li>
+      </ul>
+
+        De komende twee jaar word ik nog door Codaisseur begeleid en volg ik maandelijks een klassikale les.
+        <br><br>
+        Ik zou graag met jullie in gesprek komen over de mogelijkheden om binnen Mollie aan de slag te gaan.
+        <br>
+        <h1> Waarom webdevelopment? </h1>
+        <p> Ik was als tiener al enthousiast om websites te bouwen. Door middel van Joomla heb ik meerdere badmintonwebsites opgezet en beheerd.
+          De grootste hiervan was een badmintoncommunity (die nu helaas niet meer bestaat), waarop nieuwsartikelen, columns, interviews en een forum te vinden was.
+          Ik heb altijd al mijn beroep van programmeren willen maken, maar helaas niet de stap durven zetten. Nu is dat moment gekomen!
+        </p>
+
+    <h1>Werkervaring</h1>
+        <% @jobs.each do |job| %>
+            <b><p>Naam:</b> <%= job.name %></p>
+            <b><p>Functie: </b> <%= job.position %></p>
+            <b><p>Data: </b><%= job.dates %></p>
+            <b><p>Locatie: </b><%= job.location %></p>
+            <b><p>Omschrijving: </b><%= job.description %></p>
+            <br>
+        <% end %>
+
+
+    <h3><%= link_to 'Mollie aan deze lijst toevoegen?', create_path, method: :create%></h3>
+    <br>
+
+  </div>
+    <div class="Education">
+      <h1> Opleidingen </h1>
+        <% @educations.each do |education| %>
+            <b><p>Instelling: </b><%= education.institutionname %></p>
+            <b><p>Data: </b><%= education.dates %></p>
+            <b><p>Studie: </b><%= education.description %></p>
+            <br>
+        <% end %>
+    </div>
+  </div>
+  <div class="Me">
+    <div>  </div>
+    <h1></h1>
+    <br><br><a href="https://nl.linkedin.com/in/angela-van-den-hudding-2049a7a"><img src="http://res.cloudinary.com/angela2389/image/upload/v1476381207/linkedin_ftz60j.png"></a>
+    <p> LinkedIn referenties</p>
+    <br><br><a href="https://github.com/angela2389/Badmintonshop"><img src="http://res.cloudinary.com/angela2389/image/upload/v1476381198/Github_logo_x6vntk.png"></a>
+    <p>Github badmintonwebshop</p>
+    <br><br><a href="https://badmintonshop.herokuapp.com/"><img src="http://res.cloudinary.com/angela2389/image/upload/v1476382384/shuttle_kzuia1.jpg"></a>
+    <p>Demo badmintonwebshop</p>
+    <br><br>
+  </div>
+</div>
+<div class="CallMe"></p>Bel voor een afspraak: <b>06-52204121</b></p>
+<a href="mailto:angela.vandenhudding@gmail.com">of stuur een <b>email </b><img src="http://res.cloudinary.com/angela2389/image/upload/v1476388277/envelope-icon-0_wha868.png"></a></div>

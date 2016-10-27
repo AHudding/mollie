@@ -1,0 +1,145 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+html {
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.Main {
+  display: flex;
+}
+
+.Header {
+  color: #e84a4a;
+  text-align: center;
+}
+
+.Header h1{
+  font-size: 50px;
+}
+
+.Welcome {
+  background-color: rgba(0, 0, 0, 0.0);
+  height: 100%;
+  border: 1px solid #54BFFF;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.Welcome h2 {
+  color: #54BFFF;
+  font-size: 50px;
+  margin-bottom: 150px;
+}
+
+.Welcome a {
+  text-decoration: none;
+}
+
+.KnowMore {
+  border-radius: 25px;
+  width: 200px;
+  height: 30px;
+  background-color: #fff;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.KnowMore a{
+  color: #54BFFF;
+}
+
+.KnowMore:hover{
+  background-color: #54BFFF;
+  border: 1px solid #54BFFF;
+  text-decoration: none;
+}
+
+.Picture {
+  background-image: url(http://res.cloudinary.com/angela2389/image/upload/v1477564654/Hermanus_1_yp771t.jpg);
+  background-size: cover;
+  width: 75%;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.Hire {
+  text-align: center;
+  flex: 1;
+}
+
+.Hire h1 {
+  color: #FC992B;
+  font-size: 100px;
+}
+
+.Me {
+  text-align: center;
+  flex: 1;
+}
+
+.Me h1 {
+  font-size: 100px;
+}
+
+.Me img {
+  width: 50px;
+}
+
+.Experience {
+  flex: 2;
+}
+
+.Experience h1 {
+  color: #54BFFF;
+}
+
+#Jobs {
+}
+
+.Education {
+  margin-left: 20px;
+}
+
+.CallMe {
+  border: 1px solid #fff;
+  border-radius: 20px 0px 0px 0px;
+  height: 65px;
+  width: 280px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: #54BFFF;
+  color: #fff;
+  padding-left: 6px;
+}
+
+.CallMe a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.CallMe img {
+  width: 20px;
+}
+
+#notice {
+  font-size: 30px;
+}
