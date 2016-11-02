@@ -20,7 +20,7 @@ class JobsController < ApplicationController
 
     respond_to do |format|
       if @job.save
-        format.html { redirect_to root_path, notice: 'Betty Blocks is toegevoegd. Vergeet niet te bellen of mailen om het goede nieuws te bevestigen!' }
+        format.html { redirect_to root_path, notice: 'De functie is toegevoegd. Vergeet niet te bellen of mailen om het goede nieuws te bevestigen!' }
         format.json { render :show, status: :created, location: @job }
       else
         format.html { render root_path, notice: 'Er is iets mis gegaan' }

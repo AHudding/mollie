@@ -28,7 +28,7 @@ name: "Servicenow Inc.",
 position:"Sr. AP Accountant",
 dates: "Januari 2014 - Mei 2016",
 location: "Amsterdam",
-description:"Ik heb het bedrijf helpen groeien van 4 naar 25 landen van de crediteurenbeheerkant. Ik heb meerdere (automatiserings)projecten geleid zoals VIM, Concur en het exporteren van betalingsbestanden. Ook maakte ik uitgave analyses.")
+description:"Ik heb het bedrijf helpen groeien van 4 naar 25 landen van de crediteurenbeheerkant. Ik heb meerdere (automatiserings)projecten geleid zoals VIM, Concur en het exporteren van betalingsbestanden. Ook maakte ik uitgaven analyses.")
 
 Education.create(
   institutionname: "Codaisseur",
